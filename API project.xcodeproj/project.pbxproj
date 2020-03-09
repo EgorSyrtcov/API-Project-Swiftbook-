@@ -15,6 +15,8 @@
 		2EEDE66124164E9400F80EF4 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDE66024164E9400F80EF4 /* StoryboardInitializable.swift */; };
 		2EEDE66324164EB600F80EF4 /* UIViewControllerStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDE66224164EB600F80EF4 /* UIViewControllerStoryboard.swift */; };
 		2EEDE66524164EDA00F80EF4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDE66424164EDA00F80EF4 /* Color.swift */; };
+		2EEDE66B241662C100F80EF4 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDE66A241662C100F80EF4 /* CurrentWeather.swift */; };
+		2EEDE66D2416644800F80EF4 /* WeatherIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDE66C2416644800F80EF4 /* WeatherIconManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2EEDE66024164E9400F80EF4 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		2EEDE66224164EB600F80EF4 /* UIViewControllerStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerStoryboard.swift; sourceTree = "<group>"; };
 		2EEDE66424164EDA00F80EF4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2EEDE66A241662C100F80EF4 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		2EEDE66C2416644800F80EF4 /* WeatherIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		2EEDE65B24164E2400F80EF4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2EEDE66A241662C100F80EF4 /* CurrentWeather.swift */,
+				2EEDE66C2416644800F80EF4 /* WeatherIconManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,10 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEDE66D2416644800F80EF4 /* WeatherIconManager.swift in Sources */,
 				2EEDE64824164D3000F80EF4 /* ViewController.swift in Sources */,
 				2EEDE64624164D3000F80EF4 /* AppDelegate.swift in Sources */,
 				2EEDE66324164EB600F80EF4 /* UIViewControllerStoryboard.swift in Sources */,
 				2EEDE66524164EDA00F80EF4 /* Color.swift in Sources */,
+				2EEDE66B241662C100F80EF4 /* CurrentWeather.swift in Sources */,
 				2EEDE66124164E9400F80EF4 /* StoryboardInitializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

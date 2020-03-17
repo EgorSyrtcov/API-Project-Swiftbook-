@@ -11,16 +11,18 @@ import Foundation
 class NetworkService {
     static let shared = NetworkService()
     
-    public func getData(url: URL, complition: @escaping (Any) -> ()) {
+    public func getData(url: String, complition: @escaping ([Course]) -> ()) {
+        
+        guard let url = URL(string: url) else { return }
         let session = URLSession.shared
     
         session.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                DispatchQueue.main.async {
-                    complition(json)
+                let cource = try JSONDecoder().decode([Course].self, from: data)
+                DispatchQueue.global().async {
+                     complition(cource)
                 }
             } catch {
                 print(error)

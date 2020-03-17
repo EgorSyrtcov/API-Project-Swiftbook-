@@ -13,8 +13,8 @@ class CommentCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textView: UITextView!
     
-    func confuguration(with comment: Comment) {
-        label.text = comment.name
-        textView.text = comment.body
+    func confuguration(with cource: Course) {
+        label.text = cource.name
+        textView.text = String(describing: cource.id)
     }
 }

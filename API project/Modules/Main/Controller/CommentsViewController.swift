@@ -12,14 +12,18 @@ class CommentsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var comments = [Comment]()
+    var comments = [Course]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CommentNetworkService.getComments { (response) in
-            self.comments = response.comments
-            self.tableView.reloadData()
+        let urlString = "https://api.letsbuildthatapp.com/jsondecodable/courses"
+        
+        NetworkService.shared.getData(url: urlString) { (cource) in
+            self.comments = cource
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
 }
